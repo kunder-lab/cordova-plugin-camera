@@ -150,14 +150,14 @@ static NSString* toBase64(NSData* data) {
                 authStatus == AVAuthorizationStatusRestricted) {
                 // If iOS 8+, offer a link to the Settings app
                 NSString* settingsButton = (&UIApplicationOpenSettingsURLString != NULL)
-                    ? NSLocalizedString(@"Settings", nil)
+                    ? NSLocalizedString(@"Configuración", nil)
                     : nil;
 
                 // Denied; show an alert
                 dispatch_async(dispatch_get_main_queue(), ^{
                     [[[UIAlertView alloc] initWithTitle:[[NSBundle mainBundle]
                                                          objectForInfoDictionaryKey:@"CFBundleDisplayName"]
-                                                message:NSLocalizedString(@"Access to the camera has been prohibited; please enable it in the Settings app to continue.", nil)
+                                                message:NSLocalizedString(@"La Aplicación no tiene acceso a tu cámara. Para activarla, ingresa a configuración y activa Cámara.", nil)
                                                delegate:self
                                       cancelButtonTitle:NSLocalizedString(@"OK", nil)
                                       otherButtonTitles:settingsButton, nil] show];
