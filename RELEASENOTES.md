@@ -222,3 +222,6 @@
 * CB-8601 - iOS camera unit tests broken
 * CB-7667 iOS8: Handle case where camera is not authorized (closes #49)
 * add missing license header
+
+### 1.2.1 (Sept 07, 2016)
+* Translated harcoded texts to spanish
