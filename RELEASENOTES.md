@@ -20,6 +20,9 @@
 -->
 # Release Notes
 
+### 2.2.1 (Sept 07, 2016)
+* Translated harcoded texts to spanish
+
 ### 2.2.0 (Apr 15, 2016)
 * CB-10873 Avoid crash due to usage of uninitialized variable when writing geolocation data to image destination. Properly handle 'CameraUsesGeolocation' option by properly setting geolocation data in EXIF header in all cases
 * CB-11073 Appium tests stability improvements
